@@ -3,22 +3,8 @@
 // index.js
 //-----------------------------------------------------------------------------
 
-function hello() {
-  return 'Hello';
-}
+const circle = (r) => 3.14 * (r ** 2);
 
-const goodbye = () => {
-  return 'Goodbye';
-}
+const square = (s) => s * s;
 
-class Set {
-  constructor() {
-    this.data = {};
-  }
-
-  farewell = () => {
-    return 'Farewell';
-  }
-}
-
-module.exports = { hello, goodbye, Set };
+export {circle, square};

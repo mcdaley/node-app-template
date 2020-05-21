@@ -1,19 +1,14 @@
 //-----------------------------------------------------------------------------
 // index.test.js
 //-----------------------------------------------------------------------------
-const {hello, goodbye, Set } = require('./index')
+import { circle, square } from './index';
 
-describe('Hello', () => {
-  it('Returns hello', () => {
-    expect(hello()).toBe('Hello');
+describe('Area', () => {
+  it('Calculate area for circle', () => {
+    expect(circle(4)).toBe(50.24);
   })
 
-  it('Returns goodbye', () => {
-    expect(goodbye()).toBe('Goodbye');
-  })
-
-  it('Returns farewell', () => {
-    let s = new Set();
-    expect(s.farewell()).toBe('Farewell');
+  it('Calculates area for a sqaure', () => {
+    expect(square(5)).toBe(25);
   })
 })
